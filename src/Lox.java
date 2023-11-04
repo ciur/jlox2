@@ -4,7 +4,7 @@ import java.nio.file.Paths;
 import java.nio.file.Files;
 import java.util.List;
 
-public class Main {
+public class Lox {
     static boolean hadError = false;
 
     public static void main(String[] args) throws IOException {
