@@ -16,9 +16,13 @@ public class Main {
     }
     private static void runFile(String path) throws IOException {
         byte[] byteps = Files.readAllBytes(Paths.get(path));
-        String s = new String(byteps, Charset.defaultCharset());
+        String source = new String(byteps, Charset.defaultCharset());
 
-        System.out.println(s);
+        run(source);
+    }
+
+    private static void run(String source) throws IOException {
+        Scanner scanner = new Scanner(source);
     }
     private static void runPrompt() {
         System.out.println("runPrompt");
